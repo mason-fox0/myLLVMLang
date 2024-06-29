@@ -40,7 +40,7 @@ public:
 };
 
 // Expression class for function call
-class callExprAST : public ExprAST {
+class CallExprAST : public ExprAST {
 private:
     std::string Callee;
     std::vector<std::unique_ptr<ExprAST>> Args;
