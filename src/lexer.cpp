@@ -1,15 +1,7 @@
 //lexer for my llvm programming language
 //returns tokens [0-255] it is an unknown char, otherwise one
 
-#include <string>
-
-enum Token{
-    tok_eof        = -1,
-    tok_def        = -2,
-    tok_extern     = -3,
-    tok_identifier = -4,
-    tok_number     = -5,
-};
+#include <lexer.h>
 
 static std::string IdentifierStr;
 static double NumVal;
